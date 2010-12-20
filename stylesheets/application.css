@@ -119,7 +119,7 @@ div#container div#sub-header {
 }
 
 div#container div#promos {
-/* Why isn't this working right??
+/*
   -moz-column-width: 323px;
   -webkit-column-width: 323px;
   -moz-column-gap: 14px;
