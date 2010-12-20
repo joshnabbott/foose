@@ -31,6 +31,7 @@ a:hover {
 
 .reset {
   clear: both;
+  height: 0;
 }
 
 .uppercased {
@@ -42,7 +43,6 @@ a:hover {
 */
 
 div#container {
-  height: 1000px;
   margin: 0 auto;
   position: relative;
   width: 998px;
@@ -119,11 +119,24 @@ div#container div#sub-header {
 }
 
 div#container div#promos {
+/* Why isn't this working right??
   -moz-column-width: 323px;
   -webkit-column-width: 323px;
   -moz-column-gap: 14px;
   -webkit-column-gap: 14px;
+*/
   margin-bottom: 61px;
+}
+
+div#container div#promos div.column {
+  float: left;
+  margin-right: 14px;
+  width: 323px;
+}
+
+div#container div#promos div.column:nth-child(3),
+div#container div#promos div.column.last {
+  margin-right: 0;
 }
 
 div#container div#content-main {
@@ -142,6 +155,7 @@ div#container div#content-main div.column {
   margin-right: 40px;
 }
 
+div#container div#content-main div.column:nth-child(3),
 div#container div#content-main div.column.last {
   margin-right: 0;
 }
