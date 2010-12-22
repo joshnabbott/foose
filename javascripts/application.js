@@ -6,7 +6,8 @@ $(document).ready(function() {
       pauseTime: 5000,
       pauseOnHover: false,
       controlNavThumbs: true,
-      controlNavThumbsReplace: '-thumb.jpg'
+      controlNavThumbsReplace: '-thumb.jpg',
+      slices: 1
     });
   }, 2000);
 });

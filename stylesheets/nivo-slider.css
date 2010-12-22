@@ -89,6 +89,7 @@
   width: 100%;
 }
 #slider .nivo-controlNav img {
+  border: 1px solid #242424;
   display: inline;
   margin-right: 10px;
   position: relative;
