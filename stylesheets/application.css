@@ -118,7 +118,6 @@ div#container div#sub-header {
   margin-bottom: 17px;
 }
 
-div#container div#sub-header img,
 div#container div#sub-header div#slider,
 div#container div#sub-header .nivo-slice {
   -webkit-border-top-left-radius: 7px;
@@ -127,6 +126,12 @@ div#container div#sub-header .nivo-slice {
   -moz-border-radius-topright: 7px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+}
+
+div#container div#sub-header img {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
 }
 
 div#container div#promos {
