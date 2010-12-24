@@ -2,7 +2,8 @@ $(document).ready(function() {
   setTimeout(function(){
     $('#slider').nivoSlider({
       effect: 'fade',
-      directionNav: false,
+      directionNav: true,
+      directionNavHide: false,
       pauseTime: 5000,
       pauseOnHover: false,
       controlNavThumbs: true,

@@ -14,11 +14,13 @@
 .nivoSlider {
   position:relative;
 }
+
 .nivoSlider img {
   position:absolute;
   top:0px;
   left:0px;
 }
+
 /* If an image is wrapped in a link */
 .nivoSlider a.nivo-imageLink {
   position:absolute;
@@ -32,6 +34,7 @@
   z-index:60;
   display:none;
 }
+
 /* The slices in the Slider */
 .nivo-slice {
   display:block;
@@ -39,6 +42,7 @@
   z-index:50;
   height:100%;
 }
+
 /* Caption styles */
 .nivo-caption {
   position:absolute;
@@ -50,47 +54,76 @@
   width:100%;
   z-index:89;
 }
+
 .nivo-caption p {
   padding:5px;
   margin:0;
 }
+
 .nivo-caption a {
   display:inline !important;
 }
+
 .nivo-html-caption {
-    display:none;
+  display:none;
 }
+
 /* Direction nav styles (e.g. Next & Prev) */
-.nivo-directionNav a {
-  position:absolute;
-  top:45%;
-  z-index:99;
-  cursor:pointer;
-}
-.nivo-prevNav {
-  left:0px;
-}
-.nivo-nextNav {
-  right:0px;
-}
-/* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav a {
-  position:relative;
-  z-index:99;
-  cursor:pointer;
-}
-.nivo-controlNav a.active {
-  font-weight:bold;
-}
-#slider .nivo-controlNav {
-  bottom: -73px;
+.nivo-directionNav {
+  bottom: -52px;
+  height: 19px;
+  line-height: 19px;
   position: absolute;
-  text-align: center;
   width: 100%;
 }
+
+.nivo-directionNav a {
+  cursor: pointer;
+  display: block;
+  height: 19px;
+  text-indent: -9999px;
+  width: 10px;
+  z-index: 99;
+}
+
+a.nivo-prevNav {
+  background: url('../images/css/icon-arrow-left.png') 0 0 no-repeat;
+  float: left;
+  margin-left: 220px;
+}
+
+a.nivo-nextNav {
+  background: url('../images/css/icon-arrow-right.png') 0 0 no-repeat;
+  float: right;
+  margin-right: 220px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+
+#slider .nivo-controlNav {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 477px;
+  width: 513px;
+}
+
 #slider .nivo-controlNav img {
   border: 1px solid #242424;
   display: inline;
-  margin-right: 10px;
+  margin-right: 19px;
   position: relative;
 }
+
+#slider .nivo-controlNav .nivo-control:last-child img {
+  margin: 0;
+}
+
