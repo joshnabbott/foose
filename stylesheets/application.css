@@ -5,9 +5,9 @@
 */
 body {
   background: #000 url('../images/css/background-body.jpg') no-repeat 50% 0;
-  color: #646464;
-  font-family: Verdana, sans-serif;
-  font-size: 10px;
+  color: #686868;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
   line-height: 150%;
   width: 100%;
 }
@@ -25,14 +25,30 @@ a:hover {
   color: #e3822d;
 }
 
-hr {
+hr.dotted {
+  background: transparent;
+  border: 0;
+  border-top: 1px dotted #363636;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+hr.dotted-solid {
   background: transparent;
   border: 0;
   border-top: 1px dotted #363636;
   border-bottom: 1px solid #363636;
   height: 2px;
+  margin-bottom: 10px;
 }
 
+p {
+  margin-bottom: 10px;
+}
+
+.light {
+  color: #aeaeae;
+}
 .lowercased {
   text-transform: lowercase;
 }
@@ -192,12 +208,26 @@ div#container div#content-main div.column h3 {
 }
 
 /*
+  Homepage styles
+*/
+
+div#container div#content-main div.column div.post p {
+  width: 271px;
+}
+
+div#container div#content-main div.column div.post p.title {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+/*
   Footer
 */
 
 div#container div#footer {
   background: url('../images/css/background-footer.jpg') no-repeat 0 0;
   color: #fff;
+  font-family: Verdana, sans-serif;
   font-size: 9px;
   height: 192px;
   position: relative;
@@ -205,6 +235,7 @@ div#container div#footer {
 
 div#container div#footer p {
   bottom: 80px;
+  margin: 0;
   position: absolute;
 }
 
