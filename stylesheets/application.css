@@ -25,6 +25,14 @@ a:hover {
   color: #e3822d;
 }
 
+hr {
+  background: transparent;
+  border: 0;
+  border-top: 1px dotted #363636;
+  border-bottom: 1px solid #363636;
+  height: 2px;
+}
+
 .lowercased {
   text-transform: lowercase;
 }
@@ -141,7 +149,7 @@ div#container div#promos {
   -moz-column-gap: 14px;
   -webkit-column-gap: 14px;
 */
-  margin-bottom: 61px;
+  margin-bottom: 28px;
 }
 
 div#container div#promos div.column {
@@ -156,19 +164,19 @@ div#container div#promos div.column.last {
 }
 
 div#container div#content-main {
-/* Why isn't this working right??
-  -moz-column-width: 295px;
-  -webkit-column-width: 295px;
-  -moz-column-gap: 40px;
-  -webkit-column-gap: 40px; */
-  padding: 0 16px;
   margin-bottom: 35px;
 }
 
 div#container div#content-main div.column {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  background: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
   float: left;
-  width: 295px;
-  margin-right: 40px;
+  width: 291px;
+  margin-right: 14px;
+  padding: 16px;
 }
 
 div#container div#content-main div.column:nth-child(3),
@@ -189,5 +197,21 @@ div#container div#content-main div.column h3 {
 
 div#container div#footer {
   background: url('../images/css/background-footer.jpg') no-repeat 0 0;
+  color: #fff;
+  font-size: 9px;
   height: 192px;
+  position: relative;
 }
+
+div#container div#footer p {
+  bottom: 80px;
+  position: absolute;
+}
+
+div#container div#footer p:first-child {
+  left: 30px;
+}
+
+div#container div#footer p:last-child {
+  right: 30px;
+  text-align: right;
