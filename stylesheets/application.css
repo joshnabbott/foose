@@ -252,6 +252,17 @@ div#container div#content-main div.column div.post p.title {
   line-height: 150%;
 }
 
+div#container div#content-main div.column div.post.active,
+div#container div#content-main div.column div.post.active .light,
+div#container div#content-main div.column div.post.active a {
+  color: #e3822d;
+}
+
+div#container div#content-main div.column div.post.active img {
+  border: 3px solid #e3822d;
+  margin: -3px;
+}
+
 /*
   Videos
 */
@@ -262,6 +273,20 @@ div#container div#content-main div.column.videos hr {
 
 div#container div#content-main div.column div.video {
   margin-bottom: 28px;
+}
+
+div#container div#content-main div.column div.video.active,
+div#container div#content-main div.column div.video.active a {
+  color: #e3822d;
+}
+
+div#container div#content-main div.column div.video.active img {
+  border: 3px solid #e3822d;
+  margin: -3px;
+}
+
+div#container div#content-main div.column div.video.active img.bordered {
+  margin: -2px;
 }
 
 /*
@@ -289,6 +314,18 @@ div#container div#content-main div.column div.event p.strong {
 div#container div#content-main div.column div.event p:nth-child(1) {
   margin-bottom: 5px;
 }
+
+div#container div#content-main div.column div.event.active,
+div#container div#content-main div.column div.event.active p.strong,
+div#container div#content-main div.column div.event.active a {
+  color: #e3822d;
+}
+
+div#container div#content-main div.column div.event.active img {
+  border: 3px solid #e3822d;
+  margin: -3px;
+}
+
 
 /*
   Footer

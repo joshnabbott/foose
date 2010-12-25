@@ -1,4 +1,14 @@
 $(document).ready(function() {
+
+  $('.post, .video, .event').each(function() {
+    $(this).hover(function() {
+      $(this).addClass('active');
+    },
+    function() {
+      $(this).removeClass('active');
+    });
+  });
+
   setTimeout(function(){
     $('#slider').nivoSlider({
       effect: 'fade',
