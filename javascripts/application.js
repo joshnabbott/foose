@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('.post, .video, .event').each(function() {
+  $('#promos .column, .post, .video, .event').each(function() {
     $(this).hover(function() {
       $(this).addClass('active');
     },

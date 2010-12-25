@@ -197,14 +197,23 @@ div#container div#promos {
 }
 
 div#container div#promos div.column {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   float: left;
-  margin-right: 14px;
-  width: 323px;
+  height: 266px;
+  margin-right: 7px;
+  overflow: hidden;
+  width: 328px;
 }
 
 div#container div#promos div.column:nth-child(3),
 div#container div#promos div.column.last {
   margin-right: 0;
+}
+
+div#container div#promos div.column.active img {
+  margin-top: -266px;
 }
 
 div#container div#content-main {
