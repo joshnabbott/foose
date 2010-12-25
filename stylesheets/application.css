@@ -25,6 +25,16 @@ a:hover {
   color: #e3822d;
 }
 
+a.with-arrows {
+  background: url('../images/css/icon-link-arrows.png') right 50% no-repeat;
+  color: #e3822d;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 150%;
+  padding-right: 18px;
+}
+
 hr.dotted {
   background: transparent;
   border: 0;
@@ -46,6 +56,15 @@ p {
   margin-bottom: 10px;
 }
 
+.bordered {
+  border: 1px solid #fff;
+}
+
+.left {
+  float: left;
+  margin-right: 10px;
+}
+
 .light {
   color: #aeaeae;
 }
@@ -56,6 +75,15 @@ p {
 .reset {
   clear: both;
   height: 0;
+}
+
+.right {
+  float: right;
+  margin-left: 10px;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 .uppercased {
@@ -211,6 +239,10 @@ div#container div#content-main div.column h3 {
   Homepage styles
 */
 
+/*
+  Blog posts
+*/
+
 div#container div#content-main div.column div.post p {
   width: 271px;
 }
@@ -218,6 +250,44 @@ div#container div#content-main div.column div.post p {
 div#container div#content-main div.column div.post p.title {
   font-size: 12px;
   line-height: 150%;
+}
+
+/*
+  Videos
+*/
+
+div#container div#content-main div.column.videos hr {
+  margin-bottom: 28px;
+}
+
+div#container div#content-main div.column div.video {
+  margin-bottom: 28px;
+}
+
+/*
+  Events
+*/
+
+div#container div#content-main div.column.events hr {
+  margin-bottom: 28px;
+}
+
+div#container div#content-main div.column div.event {
+  margin-bottom: 28px;
+}
+
+div#container div#content-main div.column div.event p {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+div#container div#content-main div.column div.event p.strong {
+  color: #cbcbcb;
+}
+
+div#container div#content-main div.column div.event p:nth-child(1) {
+  margin-bottom: 5px;
 }
 
 /*
